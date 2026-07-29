@@ -83,18 +83,17 @@ export const tools = [
 export const pmProjects = [
   {
     id: "PM-01",
-    title: "AI & Prompt Engineering Project Delivery",
+    title: "Sea Logistics Document Intelligence — Prompt Engineering",
     organization: "Rippey AI",
-    category: "Cross-Functional Project Management",
+    category: "Prompt Engineering & Domain Intelligence",
     summary:
-      "Led end-to-end delivery of AI and prompt-engineering projects across Product, Engineering, Partnerships, and Client Success teams.",
+      "This isn't an automated pipeline, it's applied prompt engineering for the sea logistics domain. Worked directly with shipping and logistics documents, including Bills of Lading, AP Invoices, and Arrival Notices, and wrote extraction prompts tailored to how major ocean carriers format their paperwork, including MSC, ONE, Evergreen, and Hapag-Lloyd.",
     deliverables: [
-      "Dependency mapping and risk mitigation frameworks",
-      "Production prompt optimization for quality & operational efficiency",
-      "Client demonstration packages & audit-ready documentation",
-      "Partner onboarding implementation plans and structured AI workflows",
+      "Built & refined prompts specific to each carrier's layout & terminology (MSC, ONE, Evergreen, Hapag-Lloyd)",
+      "Extracted key operational fields: container numbers, vessel & voyage details, dates, parties, and charges",
+      "Achieved 95% extraction accuracy across tested document types through iterative testing & prompt design",
     ],
-    tools: ["Jira", "ClickUp", "Notion", "Asana", "LLM Pipelines"],
+    tools: ["Prompt Architecture", "Domain Extraction", "LLM Evaluation", "Logistics Intelligence"],
     accent: "#c45c26",
   },
   {
@@ -235,26 +234,7 @@ export const videos = [
   },
 ] as const;
 
-export const projects = [
-  {
-    id: "01",
-    title: "RoastBot",
-    category: "Full-Stack AI · Personal Project",
-    description:
-      "Built and deployed a full-stack AI web application that generates personalized comedy roasts using the Groq LLM API, with dynamic prompt construction based on user inputs (name, occupation, hobby, personal flaw, intensity level).",
-    tags: ["Groq LLM API", "Full-Stack AI", "Prompt Engineering", "Vercel"],
-    link: site.social.github,
-  },
-  {
-    id: "02",
-    title: "FIFA World Cup 2026 Predictor",
-    category: "Interactive Web App · Personal Project",
-    description:
-      "Built an interactive tournament prediction web app covering the full 104-match World Cup format — group stage standings, knockout bracket progression, and champion simulation. Implemented click-to-advance bracket logic, real-time group standings calculation (W/D/L/PTS), live score API integration with match-locking, and JSON export/import for saving predictions. Built with vanilla JavaScript, deployed on Vercel.",
-    tags: ["Vanilla JS", "Live API Integration", "Bracket Logic", "Vercel"],
-    link: site.social.website,
-  },
-] as const;
+export const projects = [] as const;
 
 export const experience = [
   {
@@ -359,9 +339,6 @@ Education: ${education.degree}, ${education.school} (${education.period})
 
 Creative Work:
 ${creativeWork.map((c) => `- ${c.title}: ${c.description}`).join("\n")}
-
-Projects:
-${projects.map((p) => `- ${p.title}: ${p.description}`).join("\n")}
 
 Tools: ${tools.map((tool) => tool.name).join(", ")}
 Skills: ${skills.join(", ")}

@@ -8,9 +8,7 @@ import { Navigation } from "@/components/Navigation";
 import { ProjectManagement } from "@/components/ProjectManagement";
 import { SkillsMarquee } from "@/components/SkillsMarquee";
 import { Tools } from "@/components/Tools";
-
 import { VisualGallery } from "@/components/VisualGallery";
-import { Work } from "@/components/Work";
 
 export default function Home() {
   return (
@@ -23,10 +21,8 @@ export default function Home() {
         <Tools />
         <Experience />
         <ProjectManagement />
-        <Work />
         <VisualGallery />
         <Certifications />
-
         <Contact />
       </main>
       <footer className="border-t border-border py-10 text-center">
