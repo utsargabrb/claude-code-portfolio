@@ -45,7 +45,7 @@ export function Hero() {
             rel="noopener noreferrer"
             className="text-sm font-medium text-muted underline decoration-accent decoration-2 underline-offset-4 transition-colors duration-300 hover:text-foreground"
           >
-            Download résumé
+            Download Resume
           </a>
         </div>
 
