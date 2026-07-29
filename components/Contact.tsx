@@ -56,17 +56,7 @@ export function Contact() {
                   →
                 </span>
               </a>
-              <a
-                href={site.social.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex items-center justify-between border-b border-border py-4 text-lg font-medium text-muted transition-colors duration-300 hover:text-foreground"
-              >
-                Live Projects
-                <span className="text-accent opacity-0 transition-opacity group-hover:opacity-100">
-                  →
-                </span>
-              </a>
+
               <a
                 href={site.resumeUrl}
                 target="_blank"
