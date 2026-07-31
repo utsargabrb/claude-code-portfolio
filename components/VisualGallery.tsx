@@ -156,9 +156,10 @@ export function VisualGallery() {
                           src={item.src}
                           alt={item.label}
                           fill
+                          unoptimized
                           className="object-cover"
-                          sizes="360px"
-                          priority={i === 0}
+                          sizes="720px"
+                          priority={i <= 1}
                         />
                       ) : (
                         <video
@@ -167,7 +168,8 @@ export function VisualGallery() {
                           muted={muted}
                           loop
                           playsInline
-                          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                          preload="auto"
+                          className="h-full w-full object-cover"
                         />
                       )}
 
