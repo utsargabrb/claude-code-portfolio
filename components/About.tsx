@@ -11,9 +11,9 @@ export function About() {
               About
             </p>
             <h2 className="font-display text-5xl font-semibold leading-tight tracking-tight text-foreground md:text-6xl">
-              Processes, AI operations,
+              Project management, AI operations,
               <br />
-              & cross-functional delivery.
+              & business development.
             </h2>
             <div className="mt-8 space-y-6 text-lg leading-relaxed text-muted">
               {aboutText.map((paragraph) => (

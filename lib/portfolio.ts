@@ -1,13 +1,13 @@
 export const site = {
   name: "Utsarga",
-  title: "AI Operations & Process Specialist | Business Development",
+  title: "AI Project Manager · Operations & Business Development Specialist",
   fullName: "Utsarga Baral",
   tagline:
-    "Driving B2B sales development, automated outbound pipelines, cross-functional workflows, and process consistency in production AI environments.",
+    "Coordinating cross-functional workflows, leading AI project delivery, driving B2B sales pipelines, and optimizing operational processes.",
   email: "utsargabrb@gmail.com",
   phone: "+977 9840892555",
   location: "Kathmandu, Nepal",
-  availability: "Currently Available for Work · Open to Business Development, AI Project Management & Operations roles",
+  availability: "Currently Available for Work · Open to AI Project Management, Operations & Business Development roles",
   social: {
     github: "https://github.com/utsargabrb",
     linkedin: "https://linkedin.com/in/utsarga-baral-01691519a",
@@ -17,10 +17,10 @@ export const site = {
 } as const;
 
 export const stats = [
-  { value: "3+", label: "Years in Operations & Business Development" },
-  { value: "Business Development", label: "Outbound Sales & AI Operations" },
+  { value: "3+", label: "Years in AI Ops, PM & Business Development" },
+  { value: "AI & Sales Ops", label: "Project Management, Multi-LLM & Outbound" },
   { value: "AI Content", label: "Prompt Architecture & Visual Generation" },
-  { value: "Open", label: "Available for Work" },
+  { value: "Open", label: "Available for PM, Ops & BD Roles" },
 ] as const;
 
 export const tools = [
@@ -323,26 +323,22 @@ export const education = {
 } as const;
 
 export const skills = [
+  "AI Project Management & Agile Delivery",
+  "AI Operations & Multi-LLM Evaluation (GPT-4, Claude, Gemini)",
   "B2B Lead Generation & Prospecting (Apollo.io)",
   "Cold Email Automation & Deliverability (Instantly.ai)",
   "Outbound Sales Strategy & Funnel Optimization",
-  "Partner & Stakeholder Coordination",
-  "Cross-functional Collaboration",
-  "Project & Deliverable Tracking",
-  "CRM & Sales Tools (Apollo.io, Instantly, HubSpot, Notion, Jira, ClickUp, Asana)",
-  "Documentation & Record Management",
-  "Process Design & Workflow Optimization",
-  "Reporting & Performance Dashboards",
-  "LLM Evaluation & AI Operations (GPT-4, Claude, Gemini)",
-  "Microsoft Office",
-  "Written & Verbal Communication",
+  "Cross-functional Stakeholder Alignment",
+  "Workflow Optimization & Process Architecture",
+  "CRM & Project Management Tools (Notion, Jira, ClickUp, Asana, HubSpot)",
+  "Documentation & Executive Reporting",
 ] as const;
 
 export const certificates = ["Claude 101"] as const;
 
 export const aboutText = [
-  "Operations, Business Development, & Sales professional with 3+ years of experience driving outbound sales pipelines, coordinating cross-functional workflows, and managing AI production environments. Proven track record in B2B lead generation, client acquisition, and process consistency across multi-stakeholder teams.",
-  "Adept with Apollo.io and Instantly.ai for automated outreach, alongside CRM & project management tools, AI content generation, and prompt architectures — executing targeted growth strategies and keeping complex projects moving forward.",
+  "AI Project Manager, Operations, & Business Development professional with 3+ years of experience leading cross-functional teams, managing production AI workflows, and driving B2B sales pipelines. Proven track record in project execution, prompt evaluation architectures, client onboarding, and automated growth strategies.",
+  "Adept with modern PM frameworks, LLM evaluation trackers, Apollo.io, Instantly.ai, and CRM tools — keeping complex AI initiatives on schedule while scaling strategic outbound business development.",
 ] as const;
 
 export function getPortfolioContext(): string {
