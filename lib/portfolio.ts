@@ -17,8 +17,8 @@ export const site = {
 } as const;
 
 export const stats = [
-  { value: "3+", label: "Years in Operations, BD & Sales" },
-  { value: "BD & AI", label: "Apollo.io, Instantly & Multi-LLM Ops" },
+  { value: "3+", label: "Years in Operations & Business Development" },
+  { value: "Business Development", label: "Outbound Sales & AI Operations" },
   { value: "AI Content", label: "Prompt Architecture & Visual Generation" },
   { value: "Open", label: "Available for Work" },
 ] as const;
@@ -267,7 +267,7 @@ export const experience = [
   {
     role: "Business Development Associate",
     company: "ScaleBuild AI / Hyperscaler",
-    period: "03/2026 – Present",
+    period: "07/2026 – Present",
     location: "Remote",
     highlights: [
       "Leading outbound business development and client acquisition strategies for AI products and cloud hyperscaler solutions.",
