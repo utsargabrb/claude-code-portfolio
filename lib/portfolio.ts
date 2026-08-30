@@ -1,13 +1,13 @@
 export const site = {
   name: "Utsarga",
+  title: "AI Project Manager · Operations & Business Development Specialist",
   fullName: "Utsarga Baral",
-  title: "AI Operations & Process Specialist | Sales",
   tagline:
-    "Coordinating cross-functional workflows, managing documentation, and driving process consistency in production AI environments.",
+    "Coordinating cross-functional workflows, leading AI project delivery, driving B2B sales pipelines, and optimizing operational processes.",
   email: "utsargabrb@gmail.com",
   phone: "+977 9840892555",
   location: "Kathmandu, Nepal",
-  availability: "Currently Available for Work · Open to AI Project Management, Operations & Sales roles",
+  availability: "Currently Available for Work · Open to AI Project Management, Operations & Business Development roles",
   social: {
     github: "https://github.com/utsargabrb",
     linkedin: "https://linkedin.com/in/utsarga-baral-01691519a",
@@ -17,13 +17,25 @@ export const site = {
 } as const;
 
 export const stats = [
-  { value: "3+", label: "Years in Operations & Sales" },
-  { value: "3", label: "LLM Platforms (GPT-4, Claude, Gemini)" },
+  { value: "3+", label: "Years in AI Ops, PM & Business Development" },
+  { value: "AI & Sales Ops", label: "Project Management, Multi-LLM & Outbound" },
   { value: "AI Content", label: "Prompt Architecture & Visual Generation" },
-  { value: "Open", label: "Available for Work" },
+  { value: "Open", label: "Available for PM, Ops & BD Roles" },
 ] as const;
 
 export const tools = [
+  {
+    name: "Apollo.io",
+    logo: "/assets/tools/apollo-logo.png",
+    category: "B2B Prospecting & Lead Gen",
+    accent: "#eab308",
+  },
+  {
+    name: "Instantly.ai",
+    logo: "/assets/tools/instantly-logo.png",
+    category: "Cold Email & Sales Automation",
+    accent: "#0066ff",
+  },
   {
     name: "ChatGPT",
     logo: "/assets/tools/chatgpt-logo.png",
@@ -128,6 +140,21 @@ export const pmProjects = [
   },
   {
     id: "PM-04",
+    title: "Outbound B2B Lead Engine & Campaign Automation",
+    organization: "ScaleBuild AI / Hyperscaler",
+    category: "Business Development & Sales Automation",
+    summary:
+      "Architected scalable outbound prospecting and automated cold email infrastructure targeting enterprise decision-makers for AI & cloud hyperscaler offerings.",
+    deliverables: [
+      "Mined and verified targeted B2B decision-maker contact data using Apollo.io filters and lead enrichment",
+      "Built and launched automated multi-touch cold email sequences in Instantly.ai with domain warmup and spintax",
+      "Established lead tracking, campaign analytics, and response optimization for outbound pipeline growth",
+    ],
+    tools: ["Apollo.io", "Instantly.ai", "B2B Lead Generation", "Cold Email Outreach", "Sales Funnel"],
+    accent: "#0ea5e9",
+  },
+  {
+    id: "PM-05",
     title: "B2B Outreach & Lead Generation Funnel",
     organization: "360 Mails",
     category: "Sales Operations & Campaign Management",
@@ -238,6 +265,19 @@ export const projects = [] as const;
 
 export const experience = [
   {
+    role: "Business Development Associate",
+    company: "ScaleBuild AI / Hyperscaler",
+    period: "07/2026 – Present",
+    location: "Remote",
+    highlights: [
+      "Leading outbound business development and client acquisition strategies for AI products and cloud hyperscaler solutions.",
+      "Leveraging Apollo.io to mine verified ICP decision-maker data, build targeted account lists, and perform deep contact enrichment.",
+      "Architecting and executing automated cold outreach workflows using Instantly.ai, managing multi-domain warmup protocols and deliverability optimization.",
+      "Designing high-converting outreach sequences and personalized messaging frameworks that consistently drive open rates, response rates, and qualified lead flow.",
+      "Managing pipeline metrics across the sales funnel, analyzing campaign performance data, and qualifying high-intent prospects for closing.",
+    ],
+  },
+  {
     role: "Associate AI Project Manager",
     company: "Rippey AI",
     period: "04/2025 – 03/2026",
@@ -283,26 +323,22 @@ export const education = {
 } as const;
 
 export const skills = [
-  "Partner & Stakeholder Coordination",
-  "Cross-functional Collaboration",
-  "Project & Deliverable Tracking",
-  "CRM & Productivity Tools (HubSpot, Notion, Jira, ClickUp, Asana)",
-  "Documentation & Record Management",
-  "Process Design & Workflow Optimization",
-  "Reporting & Performance Dashboards",
-  "Onboarding Coordination",
-  "LLM Evaluation & AI Operations (GPT-4, Claude, Gemini)",
-  "Microsoft Office",
-  "B2B Outreach & Lead Tracking",
-  "Attention to Detail",
-  "Written & Verbal Communication",
+  "AI Project Management & Agile Delivery",
+  "AI Operations & Multi-LLM Evaluation (GPT-4, Claude, Gemini)",
+  "B2B Lead Generation & Prospecting (Apollo.io)",
+  "Cold Email Automation & Deliverability (Instantly.ai)",
+  "Outbound Sales Strategy & Funnel Optimization",
+  "Cross-functional Stakeholder Alignment",
+  "Workflow Optimization & Process Architecture",
+  "CRM & Project Management Tools (Notion, Jira, ClickUp, Asana, HubSpot)",
+  "Documentation & Executive Reporting",
 ] as const;
 
 export const certificates = ["Claude 101"] as const;
 
 export const aboutText = [
-  "Operations & Sales professional with 3+ years of experience coordinating cross-functional workflows, managing documentation, and driving process consistency in production AI environments. Proven ability to track deliverables, maintain structured records, and collaborate across Partnerships, Product, and Client Success teams.",
-  "Experienced with CRM and project management tools, AI content generation, and prompt architectures — adept at keeping complex, multi-stakeholder projects on schedule and moving forward.",
+  "AI Project Manager, Operations, & Business Development professional with 3+ years of experience leading cross-functional teams, managing production AI workflows, and driving B2B sales pipelines. Proven track record in project execution, prompt evaluation architectures, client onboarding, and automated growth strategies.",
+  "Adept with modern PM frameworks, LLM evaluation trackers, Apollo.io, Instantly.ai, and CRM tools — keeping complex AI initiatives on schedule while scaling strategic outbound business development.",
 ] as const;
 
 export function getPortfolioContext(): string {
@@ -327,7 +363,7 @@ ${experience
   )
   .join("\n")}
 
-Project Management Portfolio:
+Project Management & BD Portfolio:
 ${pmProjects
   .map(
     (p) =>
@@ -345,3 +381,4 @@ Skills: ${skills.join(", ")}
 Certificates: ${certificates.join(", ")}
 `.trim();
 }
+
