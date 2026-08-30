@@ -18,14 +18,12 @@ export function Hero() {
       </div>
 
       <div className="relative mx-auto flex min-h-screen max-w-7xl flex-col justify-end px-6 pb-20 pt-32 md:px-10 md:pb-28">
-        <p className="animate-fade-up mb-6 text-sm font-medium uppercase tracking-[0.25em] text-accent-bright">
-          {site.title}
+        <p className="animate-fade-up mb-4 text-base font-medium uppercase tracking-[0.25em] text-accent-bright md:text-lg">
+          {site.fullName}
         </p>
 
-        <h1 className="animate-fade-up-delay-1 font-display text-[clamp(3rem,11vw,10rem)] font-semibold leading-[0.9] tracking-tight">
-          <span className="text-gradient">{site.name}</span>
-          <br />
-          <span className="text-foreground/90">Baral</span>
+        <h1 className="animate-fade-up-delay-1 max-w-5xl font-display text-[clamp(2.75rem,7.5vw,6rem)] font-bold leading-[1.02] tracking-tight">
+          <span className="text-gradient">{site.title}</span>
         </h1>
 
         <p className="animate-fade-up-delay-2 mt-8 max-w-2xl text-lg leading-relaxed text-muted md:text-xl">
