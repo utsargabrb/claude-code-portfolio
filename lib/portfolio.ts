@@ -1,13 +1,13 @@
 export const site = {
   name: "Utsarga",
+  title: "AI Operations & Process Specialist | Business Development",
   fullName: "Utsarga Baral",
-  title: "AI Operations & Process Specialist | Sales",
   tagline:
-    "Coordinating cross-functional workflows, managing documentation, and driving process consistency in production AI environments.",
+    "Driving B2B sales development, automated outbound pipelines, cross-functional workflows, and process consistency in production AI environments.",
   email: "utsargabrb@gmail.com",
   phone: "+977 9840892555",
   location: "Kathmandu, Nepal",
-  availability: "Currently Available for Work · Open to AI Project Management, Operations & Sales roles",
+  availability: "Currently Available for Work · Open to Business Development, AI Project Management & Operations roles",
   social: {
     github: "https://github.com/utsargabrb",
     linkedin: "https://linkedin.com/in/utsarga-baral-01691519a",
@@ -17,13 +17,25 @@ export const site = {
 } as const;
 
 export const stats = [
-  { value: "3+", label: "Years in Operations & Sales" },
-  { value: "3", label: "LLM Platforms (GPT-4, Claude, Gemini)" },
+  { value: "3+", label: "Years in Operations, BD & Sales" },
+  { value: "BD & AI", label: "Apollo.io, Instantly & Multi-LLM Ops" },
   { value: "AI Content", label: "Prompt Architecture & Visual Generation" },
   { value: "Open", label: "Available for Work" },
 ] as const;
 
 export const tools = [
+  {
+    name: "Apollo.io",
+    logo: "/assets/tools/apollo-logo.png",
+    category: "B2B Prospecting & Lead Gen",
+    accent: "#eab308",
+  },
+  {
+    name: "Instantly.ai",
+    logo: "/assets/tools/instantly-logo.png",
+    category: "Cold Email & Sales Automation",
+    accent: "#0066ff",
+  },
   {
     name: "ChatGPT",
     logo: "/assets/tools/chatgpt-logo.png",
@@ -128,6 +140,21 @@ export const pmProjects = [
   },
   {
     id: "PM-04",
+    title: "Outbound B2B Lead Engine & Campaign Automation",
+    organization: "Scale Build AI / Hyperscaler",
+    category: "Business Development & Sales Automation",
+    summary:
+      "Architected scalable outbound prospecting and automated cold email infrastructure targeting enterprise decision-makers for AI & cloud hyperscaler offerings.",
+    deliverables: [
+      "Mined and verified targeted B2B decision-maker contact data using Apollo.io filters and lead enrichment",
+      "Built and launched automated multi-touch cold email sequences in Instantly.ai with domain warmup and spintax",
+      "Established lead tracking, campaign analytics, and response optimization for outbound pipeline growth",
+    ],
+    tools: ["Apollo.io", "Instantly.ai", "B2B Lead Generation", "Cold Email Outreach", "Sales Funnel"],
+    accent: "#0ea5e9",
+  },
+  {
+    id: "PM-05",
     title: "B2B Outreach & Lead Generation Funnel",
     organization: "360 Mails",
     category: "Sales Operations & Campaign Management",
@@ -238,6 +265,18 @@ export const projects = [] as const;
 
 export const experience = [
   {
+    role: "Business Development Associate",
+    company: "Scale Build AI / Hyperscaler",
+    period: "03/2026 – Present",
+    location: "Remote",
+    highlights: [
+      "Driving outbound business development, B2B lead generation, and targeted client acquisition strategies for AI and hyperscaler solutions.",
+      "Utilizing Apollo.io for high-precision prospect data mining, account segmentation, and decision-maker contact discovery.",
+      "Architecting and executing automated cold email campaigns using Instantly.ai, maintaining domain health, warmup protocols, and high open/response rates.",
+      "Managing end-to-end sales outreach funnels, analyzing campaign performance metrics, and qualifying prospects to accelerate deal flow.",
+    ],
+  },
+  {
     role: "Associate AI Project Manager",
     company: "Rippey AI",
     period: "04/2025 – 03/2026",
@@ -283,26 +322,26 @@ export const education = {
 } as const;
 
 export const skills = [
+  "B2B Lead Generation & Prospecting (Apollo.io)",
+  "Cold Email Automation & Deliverability (Instantly.ai)",
+  "Outbound Sales Strategy & Funnel Optimization",
   "Partner & Stakeholder Coordination",
   "Cross-functional Collaboration",
   "Project & Deliverable Tracking",
-  "CRM & Productivity Tools (HubSpot, Notion, Jira, ClickUp, Asana)",
+  "CRM & Sales Tools (Apollo.io, Instantly, HubSpot, Notion, Jira, ClickUp, Asana)",
   "Documentation & Record Management",
   "Process Design & Workflow Optimization",
   "Reporting & Performance Dashboards",
-  "Onboarding Coordination",
   "LLM Evaluation & AI Operations (GPT-4, Claude, Gemini)",
   "Microsoft Office",
-  "B2B Outreach & Lead Tracking",
-  "Attention to Detail",
   "Written & Verbal Communication",
 ] as const;
 
 export const certificates = ["Claude 101"] as const;
 
 export const aboutText = [
-  "Operations & Sales professional with 3+ years of experience coordinating cross-functional workflows, managing documentation, and driving process consistency in production AI environments. Proven ability to track deliverables, maintain structured records, and collaborate across Partnerships, Product, and Client Success teams.",
-  "Experienced with CRM and project management tools, AI content generation, and prompt architectures — adept at keeping complex, multi-stakeholder projects on schedule and moving forward.",
+  "Operations, Business Development, & Sales professional with 3+ years of experience driving outbound sales pipelines, coordinating cross-functional workflows, and managing AI production environments. Proven track record in B2B lead generation, client acquisition, and process consistency across multi-stakeholder teams.",
+  "Adept with Apollo.io and Instantly.ai for automated outreach, alongside CRM & project management tools, AI content generation, and prompt architectures — executing targeted growth strategies and keeping complex projects moving forward.",
 ] as const;
 
 export function getPortfolioContext(): string {
@@ -327,7 +366,7 @@ ${experience
   )
   .join("\n")}
 
-Project Management Portfolio:
+Project Management & BD Portfolio:
 ${pmProjects
   .map(
     (p) =>
@@ -345,3 +384,4 @@ Skills: ${skills.join(", ")}
 Certificates: ${certificates.join(", ")}
 `.trim();
 }
+
