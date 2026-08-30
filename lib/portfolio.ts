@@ -141,7 +141,7 @@ export const pmProjects = [
   {
     id: "PM-04",
     title: "Outbound B2B Lead Engine & Campaign Automation",
-    organization: "Scale Build AI / Hyperscaler",
+    organization: "ScaleBuild AI / Hyperscaler",
     category: "Business Development & Sales Automation",
     summary:
       "Architected scalable outbound prospecting and automated cold email infrastructure targeting enterprise decision-makers for AI & cloud hyperscaler offerings.",
@@ -266,14 +266,15 @@ export const projects = [] as const;
 export const experience = [
   {
     role: "Business Development Associate",
-    company: "Scale Build AI / Hyperscaler",
+    company: "ScaleBuild AI / Hyperscaler",
     period: "03/2026 – Present",
     location: "Remote",
     highlights: [
-      "Driving outbound business development, B2B lead generation, and targeted client acquisition strategies for AI and hyperscaler solutions.",
-      "Utilizing Apollo.io for high-precision prospect data mining, account segmentation, and decision-maker contact discovery.",
-      "Architecting and executing automated cold email campaigns using Instantly.ai, maintaining domain health, warmup protocols, and high open/response rates.",
-      "Managing end-to-end sales outreach funnels, analyzing campaign performance metrics, and qualifying prospects to accelerate deal flow.",
+      "Leading outbound business development and client acquisition strategies for AI products and cloud hyperscaler solutions.",
+      "Leveraging Apollo.io to mine verified ICP decision-maker data, build targeted account lists, and perform deep contact enrichment.",
+      "Architecting and executing automated cold outreach workflows using Instantly.ai, managing multi-domain warmup protocols and deliverability optimization.",
+      "Designing high-converting outreach sequences and personalized messaging frameworks that consistently drive open rates, response rates, and qualified lead flow.",
+      "Managing pipeline metrics across the sales funnel, analyzing campaign performance data, and qualifying high-intent prospects for closing.",
     ],
   },
   {
